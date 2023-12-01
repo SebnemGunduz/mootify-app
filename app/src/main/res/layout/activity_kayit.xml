@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Kayit">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="750dp"
+        app:layout_constraintBaseline_toBaselineOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/img_10" />
+
+    <EditText
+        android:id="@+id/girisadi"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="315dp"
+        android:layout_marginRight="100dp"
+        android:hint="Name"
+        android:inputType="text"
+        android:textColorHint="@color/material_dynamic_neutral60"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/passwordgiris"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:textColorHint="@color/material_dynamic_neutral60"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="@id/girisadi"
+        app:layout_constraintStart_toStartOf="@id/girisadi"
+        app:layout_constraintTop_toBottomOf="@id/girisadi" />
+
+    <EditText
+        android:id="@+id/timegiris"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:hint="Daily Working Hours"
+        android:inputType="numberSigned"
+        android:textColorHint="@color/material_dynamic_neutral60"
+        android:textSize="14dp"
+        app:layout_constraintEnd_toEndOf="@id/passwordgiris"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@id/passwordgiris"
+        app:layout_constraintTop_toBottomOf="@id/passwordgiris" />
+
+    <ImageView
+        android:id="@+id/kayital"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginRight="25dp"
+        app:layout_constraintEnd_toEndOf="@+id/timegiris"
+        app:layout_constraintStart_toStartOf="@id/timegiris"
+       app:layout_constraintTop_toBottomOf="@+id/timegiris"
+        android:src="@drawable/img_11"
+
+        />
+
+    <TextView
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:clickable="true"
+        android:shadowColor="#673AB7"
+        android:text="Login"
+        android:textColor="#673AB7"
+        android:textColorLink="#751B85"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toEndOf="@+id/timegiris"
+        app:layout_constraintTop_toBottomOf="@+id/timegiris" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

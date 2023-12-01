@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".form">
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="410dp"
+        android:layout_height="817dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.348"
+        app:srcCompat="@drawable/img_12" />
+
+    <ImageView
+        android:id="@+id/startbutton"
+        android:layout_width="90dp"
+        android:layout_height="87dp"
+        android:layout_marginEnd="29dp"
+        app:layout_constraintEnd_toEndOf="@id/sifreal"
+        app:layout_constraintStart_toEndOf="@+id/signup"
+        app:layout_constraintTop_toBottomOf="@id/sifreal"
+        app:srcCompat="@drawable/img_13" />
+
+    <EditText
+        android:id="@+id/sifreal"
+        android:layout_width="170dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="88dp"
+        android:layout_marginBottom="282dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="numberSigned"
+        android:textSize="14dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/isimal"
+        tools:visibility="visible" />
+
+    <EditText
+        android:id="@+id/isimal"
+        style="@android:style/Widget.Holo.EditText"
+        android:layout_width="170dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="375dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="text"
+        android:textSize="14dp"
+        app:layout_constraintBottom_toTopOf="@+id/sifreal"
+        app:layout_constraintEnd_toEndOf="@+id/sifreal"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/sifreal"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/signup"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginEnd="45dp"
+
+        android:src="@drawable/img_14"
+        app:layout_constraintEnd_toStartOf="@+id/startbutton"
+        app:layout_constraintStart_toStartOf="@+id/sifreal"
+        app:layout_constraintTop_toBottomOf="@+id/sifreal" />
+    <TextView
+        android:id="@+id/gizli"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="@+id/sifreal"
+        app:layout_constraintEnd_toEndOf="@+id/sifreal"
+        app:layout_constraintTop_toBottomOf="@+id/sifreal"
+        android:layout_marginTop="70dp"
+        android:visibility="invisible"
+        />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

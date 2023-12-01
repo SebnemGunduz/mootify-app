@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/anasayfa"
+        android:layout_width="458dp"
+        android:layout_height="999dp"
+
+        android:focusable="true"
+        android:src="@drawable/img"
+        app:layout_constraintBottom_toBottomOf="@+id/ayar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ayar"
+        app:layout_constraintVertical_bias="0.537" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/menu"
+        android:layout_width="62dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="15dp"
+        android:focusable="true"
+        android:src="@drawable/img_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/tick"
+        android:layout_width="47dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="9dp"
+        android:src="@drawable/img_3"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@id/menu"
+        app:layout_constraintStart_toStartOf="@id/menu"
+        app:layout_constraintTop_toBottomOf="@id/menu" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/music"
+        android:layout_width="47dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="9dp"
+        android:src="@drawable/img_4"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@id/tick"
+        app:layout_constraintStart_toStartOf="@id/tick"
+        app:layout_constraintTop_toBottomOf="@id/tick" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/sayac"
+        android:layout_width="47dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="9dp"
+        android:src="@drawable/img_5"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@id/music"
+        app:layout_constraintStart_toStartOf="@id/music"
+        app:layout_constraintTop_toBottomOf="@id/music" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ayar"
+        android:layout_width="47dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="9dp"
+        android:src="@drawable/img_6"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="@id/sayac"
+        app:layout_constraintStart_toStartOf="@id/sayac"
+        app:layout_constraintTop_toBottomOf="@id/sayac" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/score"
+        android:layout_width="140dp"
+        android:layout_height="100dp"
+
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="54dp"
+        android:src="@drawable/img_1"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/named"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="-5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:textColorHint="#673AB7"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        app:autoSizeTextType="none"
+
+
+        app:layout_constraintEnd_toEndOf="@id/score"
+        app:layout_constraintHorizontal_bias="0.142"
+        app:layout_constraintStart_toStartOf="@id/score"
+        app:layout_constraintTop_toBottomOf="@id/score" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="600dp"
+        android:layout_marginRight="80dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        />
+
+    <TextView
+        android:id="@+id/gerisayim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="100dp"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="@id/progressBar"
+        app:layout_constraintTop_toTopOf="@id/progressBar" />
+
+    <TextView
+        android:id="@+id/skor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="88dp"
+        android:layout_marginTop="37dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="0"
+        android:textSize="17dp"
+        />
+
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
