@@ -44,7 +44,7 @@
                 }
             }
 
-
+//sdnlkajsnd
             val userInput = intent.getStringExtra("USER_INPUT")
             userInput?.let {
                 gizli.text = "$it"
