@@ -13,6 +13,12 @@
         android:theme="@style/Theme.Mootify"
         tools:targetApi="31">
         <activity
+            android:name=".SycActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SayacActivity"
+            android:exported="false" />
+        <activity
             android:name=".Kayit"
             android:exported="false" />
         <activity

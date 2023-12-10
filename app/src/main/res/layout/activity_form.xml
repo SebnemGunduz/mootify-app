@@ -8,32 +8,38 @@
 
     <ImageView
         android:id="@+id/imageView9"
-        android:layout_width="410dp"
-        android:layout_height="817dp"
+        android:layout_width="452dp"
+        android:layout_height="685dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.512"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.348"
-        app:srcCompat="@drawable/img_12" />
+        app:srcCompat="@drawable/formyeni" />
 
-    <ImageView
+    <TextView
+        android:textSize="14dp"
+        android:layout_marginTop="10dp"
         android:id="@+id/startbutton"
-        android:layout_width="90dp"
-        android:layout_height="87dp"
-        android:layout_marginEnd="29dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
         app:layout_constraintEnd_toEndOf="@id/sifreal"
         app:layout_constraintStart_toEndOf="@+id/signup"
         app:layout_constraintTop_toBottomOf="@id/sifreal"
-        app:srcCompat="@drawable/img_13" />
+        android:textColor="@color/white"
+        android:text="Login"
+
+        />
 
     <EditText
+        android:textColorHint="@color/white"
         android:id="@+id/sifreal"
         android:layout_width="170dp"
         android:layout_height="40dp"
-        android:layout_marginEnd="88dp"
-        android:layout_marginBottom="282dp"
+        android:layout_marginEnd="103dp"
+        android:layout_marginBottom="320dp"
+
         android:ems="10"
         android:hint="Password"
         android:inputType="numberSigned"
@@ -41,16 +47,19 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/isimal"
-        tools:visibility="visible" />
+        tools:visibility="visible"
+        android:background="@android:color/transparent"
+        />
 
     <EditText
+        android:textColorHint="@color/white"
         android:id="@+id/isimal"
-        style="@android:style/Widget.Holo.EditText"
-        android:layout_width="170dp"
+        android:layout_width="150dp"
         android:layout_height="40dp"
-        android:layout_marginTop="375dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginTop="358dp"
+        android:layout_marginEnd="26dp"
         android:layout_marginBottom="10dp"
+        android:layout_marginLeft="15dp"
         android:ems="10"
         android:hint="Name"
         android:inputType="text"
@@ -60,18 +69,21 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/sifreal"
         app:layout_constraintTop_toTopOf="parent"
-        tools:visibility="visible" />
+        tools:visibility="visible"
+        android:background="@android:color/transparent"/>
 
-    <ImageView
+    <TextView
+        android:textSize="14dp"
+        android:layout_marginTop="10dp"
+        android:text="Sign Up"
         android:id="@+id/signup"
-        android:layout_width="90dp"
-        android:layout_height="90dp"
-        android:layout_marginEnd="45dp"
-
-        android:src="@drawable/img_14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="135dp"
         app:layout_constraintEnd_toStartOf="@+id/startbutton"
         app:layout_constraintStart_toStartOf="@+id/sifreal"
-        app:layout_constraintTop_toBottomOf="@+id/sifreal" />
+        app:layout_constraintTop_toBottomOf="@+id/sifreal"
+       android:textColor="@color/white"/>
     <TextView
         android:id="@+id/gizli"
         android:layout_width="50dp"

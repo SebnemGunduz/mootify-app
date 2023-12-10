@@ -7,6 +7,7 @@
     tools:context=".MainActivity">
 
 
+
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/anasayfa"
         android:layout_width="458dp"
@@ -20,6 +21,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/ayar"
         app:layout_constraintVertical_bias="0.537" />
+
+    <ImageView
+        android:id="@+id/imageViewOynat"
+        android:layout_width="1700dp"
+        android:layout_height="1100dp"
+        android:layout_centerInParent="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.436" />
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/menu"
@@ -142,11 +155,10 @@
         android:textSize="17dp"
         />
 
-    <pl.droidsonroids.gif.GifImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
 
 
-        />
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

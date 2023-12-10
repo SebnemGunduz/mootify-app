@@ -4,41 +4,56 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#EDE3E3"
     tools:context=".Kayit">
+
+
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="0dp"
-        android:layout_height="750dp"
+        android:layout_width="452dp"
+        android:layout_height="685dp"
         app:layout_constraintBaseline_toBaselineOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.518"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/img_10" />
+        app:srcCompat="@drawable/kayitsayfa" />
 
     <EditText
         android:id="@+id/girisadi"
         android:layout_width="180dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="315dp"
-        android:layout_marginRight="100dp"
+        android:layout_marginTop="325dp"
+        android:layout_marginEnd="94dp"
         android:hint="Name"
         android:inputType="text"
-        android:textColorHint="@color/material_dynamic_neutral60"
-        android:textSize="14dp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="#FFFFFF"
+        android:textColorHighlight="#00D0C6D5"
+        android:textColorHint="@color/white"
+        android:textColorLink="#05F1ECEC"
+        android:textSize="15dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@android:color/transparent"
+        />
+
+
+
 
     <EditText
         android:id="@+id/passwordgiris"
         android:layout_width="180dp"
         android:layout_height="wrap_content"
         android:hint="Password"
-        android:textColorHint="@color/material_dynamic_neutral60"
-        android:textSize="14dp"
+        android:inputType="numberSigned"
+        android:textColorHint="@color/white"
+        android:textSize="15dp"
         app:layout_constraintEnd_toEndOf="@id/girisadi"
         app:layout_constraintStart_toStartOf="@id/girisadi"
-        app:layout_constraintTop_toBottomOf="@id/girisadi" />
+        app:layout_constraintTop_toBottomOf="@id/girisadi"
+        android:background="@android:color/transparent"
+        android:layout_marginTop="23dp"/>
 
     <EditText
         android:id="@+id/timegiris"
@@ -46,40 +61,57 @@
         android:layout_height="wrap_content"
         android:hint="Daily Working Hours"
         android:inputType="numberSigned"
-        android:textColorHint="@color/material_dynamic_neutral60"
-        android:textSize="14dp"
+        android:textColorHint="@color/white"
+        android:textSize="15dp"
+        android:layout_marginTop="19dp"
         app:layout_constraintEnd_toEndOf="@id/passwordgiris"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="@id/passwordgiris"
-        app:layout_constraintTop_toBottomOf="@id/passwordgiris" />
-
-    <ImageView
-        android:id="@+id/kayital"
-        android:layout_width="40dp"
-        android:layout_height="40dp"
-        android:layout_marginTop="100dp"
-        android:layout_marginRight="25dp"
-        app:layout_constraintEnd_toEndOf="@+id/timegiris"
-        app:layout_constraintStart_toStartOf="@id/timegiris"
-       app:layout_constraintTop_toBottomOf="@+id/timegiris"
-        android:src="@drawable/img_11"
-
-        />
+        app:layout_constraintTop_toBottomOf="@id/passwordgiris"
+        android:background="@android:color/transparent"/>
 
     <TextView
         android:id="@+id/login"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="25dp"
+        android:textSize="14dp"
         android:clickable="true"
         android:shadowColor="#673AB7"
         android:text="Login"
-        android:textColor="#673AB7"
+        android:textColor="#FFFFFF"
         android:textColorLink="#751B85"
         android:textStyle="italic"
         app:layout_constraintEnd_toEndOf="@+id/timegiris"
         app:layout_constraintTop_toBottomOf="@+id/timegiris" />
 
+    <TextView
+        android:id="@+id/postMessageTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:text=""
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/kayital"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Sign In"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toStartOf="@+id/login"
+        android:layout_marginRight="130dp"
+        app:layout_constraintBottom_toBottomOf="@+id/login"
+        android:textSize="14dp"
+
+
+
+
+      />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
